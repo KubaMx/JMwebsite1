@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="index.html" class="w3-button w3-bar-item">Home</a>
+  <a href="about.html" class="w3-button w3-bar-item">About</a>
+  <a href="search.html" class="w3-button w3-bar-item">Search</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Do you want to add your company to our database? Leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="contact.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Your e-mail</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your e-mail..">
+        <label for="lname">Company Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your company name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Poland</option>
+          <option value="canada">Germany</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <a href="index.html" class="w3-button w3-bar-item">Home</a>
+    <a href="about.html" class="w3-button w3-bar-item">About</a>
+    <a href="search.html" class="w3-button w3-bar-item">Search</a>
+    <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+    <img class="mySlides" src="ems-1.jpeg" style="width:100%">
+    <img class="mySlides" src="ems-2.jpeg" style="width:100%">
+    <img class="mySlides" src="ems-3.jpeg" style="width:100%">
+</section>
+
+<div class="centered">EMSRANK</div>
+
+<--! TODO tutaj powiekszyc ta czcionke -->
+
+<!-- Website Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+    <h2 class="w3-wide">EMS RANK</h2>
+    <p class="w3-opacity"><i>We collect reviews for biggest database of EMS companies from around the world!</i></p>
+    <p class="w3-justify">Leave an opinion basing on your experience or choose reliable partner for your project.
+        Search for critical data in the largest source of suspect counterfeit and nonconforming electronic parts.
+        Our counterfeit awareness resource center in conjunction with our reported parts database provides an indispensable
+        tool for your counterfeit risk mitigation plan.</p>
+</section>
+
+<!--  -->
+<section class="w3-row-padding w3-center w3-light-grey">
+    <article class="w3-third">
+        <p>100% Trusted!</p>
+        <img src="trusted.jpg" alt="Random Name" style="width:100%">
+        <p>Certificate no#123654789</p>
+    </article>
+    <article class="w3-third">
+        <p>Over 100k reviews</p>
+        <img src="reviews.png" alt="Random Name" style="width:100%">
+        <p>Biggest community in web</p>
+    </article>
+    <article class="w3-third">
+        <p>Free to use</p>
+        <img src="free.jpg" alt="Random Name" style="width:100%">
+        <p>Free for customer use</p>
+    </article>
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 3000);
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+<!-- strona posiada mozliwosc wyszukania firmy i wystawienia jej opinii -->
